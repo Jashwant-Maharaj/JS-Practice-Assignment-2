@@ -82,7 +82,13 @@
 
 //------ Chapters21-25 task 13
 
-
+// var userName = prompt("Enter the Username: ");
+// if(userName.indexOf('@') === -1 && userName.indexOf('.') === -1 && userName.indexOf(',') === -1 && userName.indexOf('!') === -1){
+//     alert("Username is valid");
+// }
+// else{
+//     alert("Please enter a valid username");
+// }
 
 //------ Chapters21-25 task 14
 
@@ -102,6 +108,25 @@
 
 //------ Chapters21-25 task 15
 
+// var input = prompt("Enter password: ");
+// var letters = /^[0-9a-zA-Z]+$/;
+// if (input.length >= 6) {
+//     if (isNaN(parseInt(input[0]))){
+//         if (input.match(letters)){
+//             alert("password is valid");
+//         }
+//         else {
+//             alert("Please input alphanumeric characters only");
+//         }
+//     }
+//     else {
+//         alert("Password should not start with number");
+//     }
+// }
+// else {
+//     alert("you have to enter at least 6 character!");
+
+// }
 
 
 //------ Chapters21-25 task 16
@@ -121,7 +146,17 @@
 
 //------ Chapters21-25 task 18
 
-
+// var str = "The quick brown fox jumps over the lazy dog";
+// var count = 0;
+// var search = 'the';
+// document.write("Text: " + str);
+// str = str.toLowerCase().split(" ");
+// for(var i = 0; i < str.length; i++){
+//     if(str[i] === search){
+//         count = count + 1;
+//     }
+// }
+// document.write("<br>There are " + count + " occurrence(s) of word '" + search + "'");
 
 //------ Chapters26-30 task 1
 
@@ -135,7 +170,6 @@
 // else{
 //     document.write("Please enter a positive number.")
 // }
-
 
 //------ Chapters26-30 task 2
 
@@ -153,7 +187,6 @@
 //------ Chapters26-30 task 3
 
 // var num = +prompt("Enter a number: ");
-
 // document.write("The absolute value of " + num + " is "+ Math.abs(num));
 
 //------ Chapters26-30 task 4
@@ -176,13 +209,15 @@
 //     document.write(num + "<br>random coin value: Heads");
 // }
 
+//------ Chapters26-30 task 6
 
 // var num = Math.floor(Math.random()*100);
 // document.write("Random number between 1 and 100: " + num);
 
 //------ Chapters26-30 task 7
 
-
+// var weight = prompt("Enter your weight in kilograms: ");
+// document.write("The weight of user is " + parseFloat(weight).toFixed(1) + " Kilograms")
 
 //------ Chapters26-30 task 8
 
@@ -463,14 +498,53 @@
 
 //------ Chapters35-38 task 11
 
-
+// function firstLetterUpper(strLocal){
+//     strLocal = strLocal.split("")
+//     for(var i = 0; i < strLocal.length; i++){
+//         if(strLocal[i] === " "){
+//             strLocal[0] = strLocal[0].toUpperCase();
+//             strLocal[i + 1] = strLocal[i + 1].toUpperCase();
+//         }
+//     }
+//     strLocal = strLocal.join("");
+//     return strLocal;
+// }
+// var strIn = prompt("Enter string: ");
+// document.write("Input: " + strIn);
+// var strOut = firstLetterUpper(strIn);
+// document.write("<br>Output: " + strOut);
 
 //------ Chapters35-38 task 12
 
-
+// function findLongestWord(strLocal){
+//     var strArr = strLocal.split(" ");
+//     for (var i = 0; i < strArr.length; i++){
+//         if (strArr[i].length > strArr[i + 1].length){
+//             return strArr[i];
+//         }
+//     }
+// }
+// var str = prompt("Enter String: ");
+// document.write("Text: " + str);
+// document.write("<br>Longest word: " + findLongestWord(str));
 
 //------ Chapters35-38 task 13
 
+// function countOccurrenceOfLetter(strLocal, searchedLetterLocal){
+//     var count = 0;
+//     strLocal = strLocal.toLowerCase().split("");
+//     for(var i = 0; i < strLocal.length; i++){
+//         if(strLocal[i] === searchedLetterLocal){
+//             count = count + 1;
+//         }
+//     }
+//     return count;
+// }
+// var str = prompt("Enter String: ");
+// var searchedLetter = prompt("Enter letter whose occurence(s) you want to count: ");
+// document.write("Text: " + str);
+// var numberOfOccurrences = countOccurrenceOfLetter(str, searchedLetter);
+// document.write("<br>There are " + numberOfOccurrences + " occurrence(s) of letter '" + searchedLetter + "'");
 
 
 //------ Chapters35-38 task 14
